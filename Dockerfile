@@ -1,2 +1,7 @@
-FROM nginx
-COPY index.html /usr/share/nginx/html/index.html
+FROM python:3.10
+
+WORKDIR /app
+
+COPY . .
+
+CMD ["python","app.py"]
