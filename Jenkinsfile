@@ -1,3 +1,6 @@
-@Library('shared-lib') _
+@Library('shared-library') _
 
-pipeline()
+cicdPipeline(
+ repo: 'https://github.com/mrbacchu2020/app-python.git',
+ image: 'monikagaikwad22/app-python:latest'
+)
